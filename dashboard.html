@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  </head>
+  <body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" style="text-align: center;">
+    
+    <header>
+        
+        <section>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a class="active" href="dashboard.html">Dashboard</a>
+        <a href="blog.html">Blog</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+    </section>
+
+    <section>
+      <ul class="importantlinks">
+        <li class="list2"><a href="https://hz.nl/en/about-hz/organisation/regulations-and-documents">CER</a></li>
+        <li class="list2"><a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/IR-CER-HZ-B-HBO-ICT-full-time-2022-2023-DEF2.pdf">IR</a></li>
+        <li class="list2"><a target="_blank" href="https://learn.hz.nl/my/">Learn</a></li>
+        <li class="list2"><a target="_blank" href="https://portal.hz.nl/en/">MyHZ</a></li>
+        <li class="list2"><a href="https://teams.microsoft.com/_#/school/teams-grid/General?ctx=teamsGrid">Teams</a></li>
+        <li class="list2"><a target="_blank" href="https://github.com/HZ-HBO-ICT">GitHub</a></li>
+      </ul>
+    </section>
+  </header>
+    
+  <main class="margin">
+    <article class="center">
+      <br><br><br><img src="dashboard.jpg" width="575" height="250"><br><br>
+
+    <section>
+        <h2>First Year</h2><br>
+        <table class="center">
+            <tr>
+              <th></th>
+              <th> Course  </th>
+              <th> Assessment </th>
+              <th> Credits you can earn<br>(EC)</th>
+              <th> Grade</th>
+            </tr>
+            <tr>
+              <td rowspan="5">Year 1</td>
+              <td>IT Personality 1</td>
+              <td>Portfolio</td>
+              <td>1.25</td>
+              <td>-</td>
+          </tr>
+
+          <tr>
+            <td>IT Personality 2</td>
+            <td>Portfolio </td>
+            <td>1.25</td>
+            <td>-</td>
+          </tr>
+
+          <tr>
+            <td> Personal Professional Development Exploration</td>
+            <td>Criterion-referenced assessment</td>
+            <td>12.5</td>
+            <td>-</td>
+          </tr>
+
+          <tr>
+            <td> IT Personality- projectweek 1</td>
+            <td>Portfolio </td>
+            <td>1.25</td>
+            <td>-</td>
+          </tr>
+
+          <tr>
+            <td>IT Personality International week</td>
+            <td>Portfolio </td>
+            <td>1.25</td>
+            <td>-</td>
+          </tr>
+
+
+
+            <tr>
+              <td rowspan="3">Quartile 1</td>
+              <td>Program- & Career Orientation</td>
+              <td>Individual process assessment</td>
+              <td>2.5</td>
+              <td>-</td>
+            </tr>
+            <tr>
+                <td> Computer Science Basics</td>
+                <td>Tentamen </td>
+                <td>5</td>
+                <td>-</td>
+            </tr>
+            <tr>
+              <td>Programming Basics</td>
+              <td>Case test (written knowledge test)</td>
+              <td>5</td>
+              <td>-</td>
+              </tr>
+            
+              <tr>
+                <td rowspan="2" >Quartile 2</td>
+                <td rowspan="2">Object-Oriented Programming</td>
+                <td>Presentation (individual)</td>
+                <td rowspan="2">10</td>
+                <td rowspan="2">-</td>
+              </tr>
+
+              <tr>
+                <td>Written knowledge test</td>
+              </tr>
+
+              <tr>
+                <td rowspan="4">Quartile 3</td>
+                <td rowspan="4">Framework Project 1</td>
+                <td>Written knowledge test</td>
+                <td rowspan="4">10</td>
+                <td rowspan="4" class="failed-retake">-</td>
+              </tr>
+              <tr><td>Written knowledge test</td></tr>
+              <tr><td>Assignment (group)</td></tr>
+              <tr><td>Assignment (individual)</td></tr>
+
+              <tr>
+                <td rowspan="3">Quartile 4</td>
+                <td rowspan="3">Framework Project 2</td>
+                <td>Portfolio </td>
+                <td rowspan="3">10</td>
+                <td rowspan="3" class="failed">-</td>
+              </tr>
+              <tr><td>Portfolio</td></tr>
+              <tr><td>Portfolio</td></tr>
+              
+              <tr>
+                <td>Quartile 3&4</td>
+                <td>Business IT Consultancy basics</td>
+                <td>Assignment (individual)</td>
+                <td>2.5</td>
+                <td class="passed">-</td>
+              </tr>
+           </table>
+    </section>
+
+    <br>
+
+    <section>
+      <label id="prg_lbl"><h2>Progress bar</h2></label>
+      <div id="bar">
+        <div id="barfill"></div>
+        <div id="nbsa"></div>
+        <text id="nbsa_mark">NBSA</text>
+      </div>
+      <text id="ind">30/60 EC</text>
+    </section>
+
+  </article>
+
+  </main><br>
+  
+
+  <footer class="footer">
+    <a target="_blank" href="mailto:abba0005@hz.nl"> <img src="gmail-icon.png" height="30" width="30"></a>
+    <a target="_blank" href="https://github.com/FatimahAbbasii"> <img src="icone-github.png" height="30" width="30"></a>
+  </footer>
+  
+</body>
+</html> 

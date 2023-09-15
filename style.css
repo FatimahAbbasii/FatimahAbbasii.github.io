@@ -1,0 +1,231 @@
+/*General stuff*/
+body{
+    background-color: white ;  color: "black";
+    text-align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+li {
+    float:left;
+}
+
+.margin{
+  margin-left: 24px;
+  margin-right: 24px;
+
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*footer*/
+footer {
+  text-decoration: none;
+  text-align: center;
+  padding: 6px 8px;
+  background-color: #333333;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 98.95%;
+  height: 30px;
+  margin-top: auto;
+}
+
+/* Navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #878787;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #878787;
+  color: white;
+}
+
+/* Hz links */
+.importantlinks {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #464545;
+}
+.importantlinks li a {
+  display: block;
+  color: white;
+  padding: 6px 8px;
+  text-decoration: none;
+}
+.importantlinks li a:hover {
+  background-color: #878787;
+  color: black;
+}
+.list2 {
+  float: right;
+  border-left: 1px solid white;
+  font-size: 17px;
+}
+
+  /*Dashboard*/  
+  /* Table */
+    tr:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+    align-items: center;
+  }
+  
+  th:nth-child(even),td:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+    text-align: center;
+    align-items: center;
+  }
+
+   td {
+    text-align: center;
+  }
+
+  /*progress*/
+
+  #ec_tot {
+    margin-left: 57%;
+  }
+  
+  #bar {
+    height: 20px;
+    width: 70%;
+    margin-left: 15%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: solid 3px;
+  }
+  
+  #barfill {
+    height: 20px;
+    width: 50%;
+    background-color: rgba(247, 32, 32, 0.807);
+    border-radius: 7px;
+    margin-bottom: 15px;
+  }
+  
+  #nbsa {
+    margin-top: -35px;
+    height: 20px;
+    width: 3px;
+    margin-left: 75%;
+    background-color: black;
+  }
+  
+  #prg_lbl {
+    margin-left: 5%;
+  }
+  
+  #nbsa_mark {
+    margin-left: 75%;
+  }
+  
+  #ind {
+    margin-left: 80%;
+  }
+
+  .marker-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .marker-list .marker {
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: rgb(224, 198, 198);
+  }
+  
+  /* Passed / failed */
+  .passed {
+    background-color: #92ec5b84;
+  }
+  .failed-retake {
+    background-color: rgba(224, 59, 59, 0.455);
+  }
+  .failed{
+    background-color: rgba(247, 32, 32, 0.807);
+  }
+
+  #file {
+    width: 100%;
+    background-color: #9cbcdb;
+  }
+  
+  
+  /*FAQ*/
+  .container h1{
+    color: black;
+    text-align: left;
+  }
+  
+  details{
+    background-color:#33333396 ;
+    color: black;
+    text-align: left;
+  }
+
+  summary {
+    padding: .5em 1.3rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;  
+    transition: height 1s ease;
+  }
+  
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  summary:after{
+    content: "\002B";
+  }
+  
+  details[open] summary {
+      border-bottom: 1px solid #aaa;
+      margin-bottom: .5em;
+  }
+  
+  details[open] summary:after{
+    content: "\00D7";
+  }
+  
+  details[open] div{
+    padding: .5em 1em;
+  }
+
+  /**/
+.blog{
+  text-align: left;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+  
