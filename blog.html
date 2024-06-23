@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+        }
+        .flex-grow {
+            flex-grow: 1;
+        }
+        .bg-navbar-footer {
+            background-color: #333333;
+        }
+        .navbar-link {
+            color: white;
+            padding: 0.5rem 1rem;
+        }
+        .navbar-link-active {
+            background-color: #878787;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen bg-gray-100">
+    <header class="bg-navbar-footer text-white p-4">
+        <nav class="flex justify-start">
+            <a href="index.html" class="navbar-link text-xl mr-4">Home</a>
+            <a href="blog.html" class="navbar-link navbar-link-active text-xl mr-4">Blog</a>
+            <a href="credits.html" class="navbar-link text-xl">Credits</a>
+        </nav>
+    </header>
+    <main class="flex-grow p-4">
+        <h1 class="text-2xl text-center">Blog</h1>
+        <div class="flex flex-col sm:flex-row justify-between gap-4">
+            <article class="bg-white p-4 shadow-md flex-1">
+                <h2 class="text-2xl mb-2">The Magic of Traveling</h2>
+                <div class="relative">
+                    <img id="blogImage1" class="w-full" src="" alt="Blog Image 1">
+                    <p id="photographer1" class="absolute bottom-2 right-2 text-white text-sm bg-black bg-opacity-50 p-1"></p>
+                </div>
+                <p class="mt-2">There's something enchanting about the idea of traveling, isn't there? It's not just about visiting new places; it's about immersing yourself in different cultures, tasting exotic cuisines, and creating memories that last a lifetime. Traveling opens up a world of possibilities, broadening our horizons and enriching our lives in ways we never imagined.</p>
+                <span class="read-more-1 hidden">
+                    <p>But perhaps the most remarkable aspect of travel is its ability to connect us with people from diverse backgrounds. From sharing stories with fellow travelers in a hostel dormitory to learning about ancient customs from a local guide, these encounters leave a lasting impact, fostering empathy and understanding.</p>
+                    <p>Of course, traveling isn't always smooth sailing. There are bound to be challenges along the way – missed flights, language barriers, and cultural misunderstandings. Yet, it's often these very challenges that lead to the most memorable experiences, pushing us out of our comfort zones and helping us grow as individuals.</p>
+                    <p>Moreover, travel has the power to ignite our sense of wonder and curiosity. Whether we're marveling at architectural wonders like the Taj Mahal or gazing up at the starry night sky in a remote village, there's a sense of awe that transcends language and culture.</p>
+                    <p>In a world that's becoming increasingly interconnected, travel has never been more accessible. With a plethora of resources at our fingertips, from budget-friendly accommodation options to comprehensive travel guides, exploring the world has never been easier.</p>
+                    <p>But amidst the excitement of planning our next adventure, let's not forget to savor the journey itself. Let's take the time to appreciate the beauty of our surroundings, to connect with the people we meet along the way, and to cultivate a spirit of gratitude for the experiences that enrich our lives.</p>
+                </span>
+                <button onclick="toggleReadMore(1)" class="mt-2 text-blue-600">Read More</button>
+            </article>
+            <article class="bg-white p-4 shadow-md flex-1">
+                <h2 class="text-2xl mb-2">The Artistry of Black and White Photography</h2>
+                <div class="relative">
+                    <img id="blogImage2" class="w-full" src="" alt="Blog Image 2">
+                    <p id="photographer2" class="absolute bottom-2 right-2 text-white text-sm bg-black bg-opacity-50 p-1"></p>
+                </div>
+                <p class="mt-2">In the world of photography, where vibrant colors often steal the spotlight, there exists a timeless allure in the simplicity of black and white imagery. Black and white photography, often regarded as the epitome of elegance and sophistication, has captivated artists and audiences alike for generations.</p>
+                <span class="read-more-2 hidden">
+                    <p>One of the most enchanting aspects of black and white photography is its ability to evoke a sense of nostalgia. Whether it's a portrait, a landscape, or a street scene, monochrome images have a unique way of transporting us to another time and place. Without the distraction of color, viewers are free to focus on the mood and atmosphere captured within the frame, allowing for a deeper emotional connection with the subject matter.</p>
+                    <p>Furthermore, black and white photography encourages creativity and experimentation. By removing the element of color, photographers are challenged to explore new techniques and perspectives to convey their vision. From dramatic contrasts to subtle gradients, the monochromatic palette offers endless possibilities for artistic expression.</p>
+                    <p>In addition to its aesthetic appeal, black and white photography holds a special place in the history of the medium. Long before the advent of color film, photographers relied solely on black and white to document the world around them. As a result, some of the most iconic images in photographic history—from Ansel Adams' majestic landscapes to Dorothea Lange's poignant portraits—are rendered in shades of gray.</p>
+                    <p>Even in today's digital age, black and white photography continues to thrive, thanks in part to advancements in technology that allow for greater control and precision in the editing process. With the click of a button, photographers can manipulate contrast, exposure, and tonality to achieve their desired aesthetic, while still preserving the timeless elegance of monochrome imagery.</p>
+                    <p>In a world saturated with color, black and white photography serves as a reminder that sometimes, less is more. By stripping away the distractions of color, these images invite us to see the world in a new light, one defined by the beauty of simplicity and the power of imagination. So the next time you pick up your camera, consider exploring the artistry of black and white photography—you just might discover a whole new way of seeing.</p>
+                </span>
+                <button onclick="toggleReadMore(2)" class="mt-2 text-blue-600">Read More</button>
+            </article>
+        </div>
+    </main>
+    <footer class="bg-navbar-footer text-white p-4 text-center">
+        <div class="flex justify-center space-x-4">
+            <a target="_blank" href="mailto:abba0005@hz.nl">
+                <img src="img/gmail-icon.png" alt="Gmail icon" class="h-8 w-8">
+            </a>
+            <a target="_blank" href="https://www.pexels.com">
+                <img src="https://images.pexels.com/lib/api/pexels-white.png" alt="Pexels icon" class="h-6 w-16">
+            </a>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

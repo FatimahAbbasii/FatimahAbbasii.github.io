@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+        }
+        .flex-grow {
+            flex-grow: 1;
+        }
+        .bg-navbar-footer {
+            background-color: #333333;
+        }
+        .navbar-link {
+            color: white;
+            padding: 0.5rem 1rem;
+        }
+        .navbar-link-active {
+            background-color: #878787;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen bg-gray-100">
+    <header class="bg-navbar-footer text-white p-4">
+        <nav class="flex justify-start">
+            <a href="index.html" class="navbar-link navbar-link-active text-xl mr-4">Home</a>
+            <a href="blog.html" class="navbar-link text-xl mr-4">Blog</a>
+            <a href="credits.html" class="navbar-link text-xl">Credits</a>
+        </nav>
+    </header>
+    <main class="flex-grow flex flex-col items-center mt-10">
+        <h1 class="text-3xl mb-4">Welcome!</h1>
+        <div class="relative">
+            <img id="homeImage" class="w-full max-w-md" src="" alt="Curated Image">
+            <p id="homePhotographer" class="absolute bottom-2 right-2 text-white text-sm bg-black bg-opacity-50 p-1"></p>
+        </div>
+    </main>
+    <footer class="bg-navbar-footer text-white p-4 text-center">
+        <div class="flex justify-center space-x-4">
+            <a target="_blank" href="mailto:abba0005@hz.nl">
+                <img src="img/gmail-icon.png" alt="Gmail icon" class="h-8 w-8">
+            </a>
+            <a target="_blank" href="https://www.pexels.com">
+                <img src="https://images.pexels.com/lib/api/pexels-white.png" alt="Pexels icon" class="h-6 w-16">
+            </a>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
