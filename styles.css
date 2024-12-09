@@ -1,0 +1,20 @@
+body, html {
+    height: 100%;
+}
+.flex-grow {
+    flex-grow: 1;
+}
+.bg-navbar-footer {
+    background-color: #333333;
+}
+.navbar-link {
+    color: white;
+    padding: 0.5rem 1rem;
+}
+.navbar-link-active {
+    background-color: #878787;
+}
+.greeting {
+    color: red;
+    font-size: 14px;
+}
